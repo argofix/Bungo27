@@ -2,60 +2,60 @@
 
 print "Bem-vindo!\n"
 
-print "Insira as informaÁıes solicitadas abaixo para identificar a modalidade de manifestaÁ„o em relaÁ„o a empreendimentos/atividades propostos para instalaÁ„o e operaÁ„o no interior ou no entorno de unidades de conservaÁ„o federais. \n"
+print "Insira as informa√ß√µes solicitadas abaixo para identificar a modalidade de manifesta√ß√£o em rela√ß√£o a empreendimentos/atividades propostos para instala√ß√£o e opera√ß√£o no interior ou no entorno de unidades de conserva√ß√£o federais. \n"
 
-print "EIA = Com Estudo de Impacto Ambiental / SEIA = Sem Estudo de Impacto Ambiental / NALic = N„o se aplica licenciamento ambiental / CZA = Unidade de ConservaÁ„o com Zona de Amortecimento / SZA = Unidade de ConservaÁ„o sem Zona de Amortecimento / CZA = Unidade de ConservaÁ„o em que n„o se aplica Zona de Amortecimento / IUC = Interior da Unidade de ConservaÁ„o / FUC = Fora de Unidade de ConservaÁ„o / FZPD3 = Fora da Zona de PresunÁ„o de Danos de 3 km / IZA = Interior da Zona de Amortecimento / FZA = Fora da Zona de Amortecimento / ZPD3 = Na Zona de PresunÁ„o de Danos de 3 km / FZPD3 = Fora da Zona de PresunÁ„o de Danos de 3 km / ZPD2 = Na Zona de PresunÁ„o de Danos de 2 km / FZPD2 = Fora da Zona de PresunÁ„o de Danos de 2 km \n"
+print "EIA = Com Estudo de Impacto Ambiental / SEIA = Sem Estudo de Impacto Ambiental / NALic = N√£o se aplica licenciamento ambiental / CZA = Unidade de Conserva√ß√£o com Zona de Amortecimento / SZA = Unidade de Conserva√ß√£o sem Zona de Amortecimento / CZA = Unidade de Conserva√ß√£o em que n√£o se aplica Zona de Amortecimento / IUC = Interior da Unidade de Conserva√ß√£o / FUC = Fora de Unidade de Conserva√ß√£o / FZPD3 = Fora da Zona de Presun√ß√£o de Danos de 3 km / IZA = Interior da Zona de Amortecimento / FZA = Fora da Zona de Amortecimento / ZPD3 = Na Zona de Presun√ß√£o de Danos de 3 km / FZPD3 = Fora da Zona de Presun√ß√£o de Danos de 3 km / ZPD2 = Na Zona de Presun√ß√£o de Danos de 2 km / FZPD2 = Fora da Zona de Presun√ß√£o de Danos de 2 km \n"
 
 print "--------------------------------------------------------------------------------------------------- \n"
 
 print "DIGITE A ALTERNATIVA ADEQUADA: \n"  
 
-emp = raw_input ("Enquadramento: \n EIA \n SEIA \n NALic \n") # emp = vari·vel que informa o tipo de licenciamento
+emp = raw_input ("Enquadramento: \n EIA \n SEIA \n NALic \n") # emp = vari√°vel que informa o tipo de licenciamento
 
-UC = raw_input ("Unidade: \n CZA \n SZA \n NAZA \n") # UC = vari·vel que informa a situaÁ„o da UC em relaÁ„o ao zoneamento
+UC = raw_input ("Unidade: \n CZA \n SZA \n NAZA \n") # UC = vari√°vel que informa a situa√ß√£o da UC em rela√ß√£o ao zoneamento
 
 if UC == "CZA":
-    uccza = raw_input ("LocalizaÁ„o: \n IUC; \n IZA \n FZA \n") # uccza = vari·vel que informa a localizaÁ„o do empreendimento para UCs que possuem zona de amortecimento
+    uccza = raw_input ("Localiza√ß√£o: \n IUC \n IZA \n FZA \n") # uccza = vari√°vel que informa a localiza√ß√£o do empreendimento para UCs que possuem zona de amortecimento
 	
 elif UC == "SZA":
     if emp == "EIA":
-        ucsza1 = raw_input ("LocalizaÁ„o: \n IUC \n ZPD3 \n FZPD3 \n") # ucsza1 = vari·vel que informa a localizaÁ„o do empreendimento para UCs sem zona de amortecimento e com licenciamento com EIA-RIMA
+        ucsza1 = raw_input ("Localiza√ß√£o: \n IUC \n ZPD3 \n FZPD3 \n") # ucsza1 = vari√°vel que informa a localiza√ß√£o do empreendimento para UCs sem zona de amortecimento e com licenciamento com EIA-RIMA
 
     elif emp == "SEIA":
-        ucsza2 = raw_input ("LocalizaÁ„o: \n IUC \n ZPD2 \n FZPD2 \n") # ucsza2 = vari·vel que informa a localizaÁ„o do empreendimento para UCs sem zona de amortecimento e com licenciamento sem EIA-RIMA
+        ucsza2 = raw_input ("Localiza√ß√£o: \n IUC \n ZPD2 \n FZPD2 \n") # ucsza2 = vari√°vel que informa a localiza√ß√£o do empreendimento para UCs sem zona de amortecimento e com licenciamento sem EIA-RIMA
     else:
-        ucnalic = raw_input ("LocalizaÁ„o: \n IUC \n FUC \n") # ucnalic = vari·vel que informa a localizaÁ„o do empreendimento ou atividade n„o licenci·vel
+        ucnalic = raw_input ("Localiza√ß√£o: \n IUC \n FUC \n") # ucnalic = vari√°vel que informa a localiza√ß√£o do empreendimento ou atividade n√£o licenci√°vel
         
 else:
-    ucnaza = raw_input ("LocalizaÁ„o: \n IUC \n FUC \n") # ucnaza = vari·vel que informa a localizaÁ„o do empreendimento para APAs e RPPNs
+    ucnaza = raw_input ("Localiza√ß√£o: \n IUC \n FUC \n") # ucnaza = vari√°vel que informa a localiza√ß√£o do empreendimento para APAs e RPPNs
 
 print "----------------------------------------------------------------------------------------------------- \n"
 
-print "PROCEDIMENTO APLIC¡VEL: \n"  
+print "PROCEDIMENTO APLIC√ÅVEL: \n"  
 
 if (emp == "EIA" and UC == "CZA" and uccza == "IUC") or (emp == "EIA" and UC == "CZA" and uccza == "IZA") or (emp == "EIA" and UC == "CZA" and uccza == "FZA") or (emp == "SEIA" and UC == "CZA" and uccza == "IUC") or (emp == "SEIA" and UC == "CZA" and uccza == "FZA") or (emp == "EIA" and UC == "SZA" and ucsza1 == "IUC") or (emp == "EIA" and UC == "SZA" and ucsza1 == "ZPD3") or (emp == "SEIA" and UC == "SZA" and ucsza2 == "IUC"):
-    print "Necessidade de AUTORIZA«√O para o licenciamento ambiental em curso, nos termos do Art. 1∫ da ResoluÁ„o CONAMA n∫ 428/2010 e InstruÁ„o Normativa ICMBio n∫ 07/2014. \n"
+    print "Necessidade de AUTORIZA√á√ÉO para o licenciamento ambiental em curso, nos termos do Art. 1¬∫ da Resolu√ß√£o CONAMA n¬∫ 428/2010 e Instru√ß√£o Normativa ICMBio n¬∫ 07/2014. \n"
  
 elif (emp == "SEIA" and UC == "CZA" and uccza == "IZA") or (emp == "SEIA" and UC == "SZA" and ucsza2 == "ZPD2"):
-    print "Necessidade de CI NCIA do licenciamento ambiental em curso, nos termos do Art. 5∫ da ResoluÁ„o CONAMA n∫ 428/2010 e e InstruÁ„o Normativa ICMBio n∫ 07/2014. \n"
+    print "Necessidade de CI√äNCIA do licenciamento ambiental em curso, nos termos do Art. 5¬∫ da Resolu√ß√£o CONAMA n¬∫ 428/2010 e e Instru√ß√£o Normativa ICMBio n¬∫ 07/2014. \n"
 
 elif (emp == "NALic" and UC == "CZA" and uccza == "IUC") or (emp == "NALic" and UC == "SZA" and ucnalic == "IUC") or (emp == "EIA" and UC == "NAZA" and ucnaza == "IUC") or (emp == "SEIA" and UC == "NAZA" and ucnaza == "IUC") or (emp == "NALic" and UC == "NAZA" and ucnaza == "IUC"):
-    print "O interessado (empreendedor) deve requerer autorizaÁ„o diretamente ‡ Unidade de ConservaÁ„o (AUTORIZA«√O DIRETA, nos termos da InstruÁ„o Normativa ICMBio n∫ 04/2009). \n"
+    print "O interessado (empreendedor) deve requerer autoriza√ß√£o diretamente √† Unidade de Conserva√ß√£o (AUTORIZA√á√ÉO DIRETA, nos termos da Instru√ß√£o Normativa ICMBio n¬∫ 04/2009). \n"
 
 else:
-    print "N„o È necess·ria manifestaÁ„o do Ûrg„o gestor da Unidade de ConservaÁ„o. \n"
+    print "N√£o √© necess√°ria manifesta√ß√£o do √≥rg√£o gestor da Unidade de Conserva√ß√£o. \n"
 
 print "----------------------------------------------------------------------------------------------------- \n"
 
 
 
 if (UC == "SZA") and (emp == "EIA" or "SEIA"):
-    print "Em unidades de conservaÁ„o que n„o possuem ZA, as faixas de 3 e 2 km a partir dos limites da UC s„o entendidas como Zonas de PresunÁ„o de Danos (exceto em APA e RPPN), aplic·veis para empreendimentos/atividades licenciados com EIA-RIMA e sem EIA-RIMA, respectivamente (conforme ResoluÁ„o CONAMA n∫ 428/2010). \n"
+    print "Em unidades de conserva√ß√£o que n√£o possuem ZA, as faixas de 3 e 2 km a partir dos limites da UC s√£o entendidas como Zonas de Presun√ß√£o de Danos (exceto em APA e RPPN), aplic√°veis para empreendimentos/atividades licenciados com EIA-RIMA e sem EIA-RIMA, respectivamente (conforme Resolu√ß√£o CONAMA n¬∫ 428/2010). \n"
 
-print "OBSERVA«√O: Em unidade de conservaÁ„o com plano de manejo e/ou com zona de amortecimento legalmente instituÌda, poder· haver imposiÁ„o de limitaÁıes administrativas e exigÍncia de autorizaÁ„o para determinadas atividades ou ·reas definidas, conforme dispıe o Art. 2∫, ß 5∫ da ResoluÁ„o CONAMA n∫ 428/2010, podendo implicar eventual alteraÁ„o no presente enquadramento. \n"
+print "OBSERVA√á√ÉO: Em unidade de conserva√ß√£o com plano de manejo e/ou com zona de amortecimento legalmente institu√≠da, poder√° haver imposi√ß√£o de limita√ß√µes administrativas e exig√™ncia de autoriza√ß√£o para determinadas atividades ou √°reas definidas, conforme disp√µe o Art. 2¬∫, ¬ß 5¬∫ da Resolu√ß√£o CONAMA n¬∫ 428/2010, podendo implicar eventual altera√ß√£o no presente enquadramento. \n"
 
-print "A an·lise para determinaÁ„o do procedimento aplic·vel a cada situaÁ„o baseia-se nos seguintes intrumentos legais: Art. 36 da Lei n∫ 9985/2000; Art. 1∫ da Lei n∫ 11516/07; ResoluÁ„o CONAMA n∫ 428/2010; InstruÁ„o Normativa ICMBio n∫ 07/2014; InstruÁ„o Normativa ICMBio n∫ 04/2009 e Parecer n∫ 0496/2011-PFE-ICMBio-SEDE/PGF/AGU. \n"
-print "Vers„o 0.1"
+print "A an√°lise para determina√ß√£o do procedimento aplic√°vel a cada situa√ß√£o baseia-se nos seguintes intrumentos legais: Art. 36 da Lei n¬∫ 9985/2000; Art. 1¬∫ da Lei n¬∫ 11516/07; Resolu√ß√£o CONAMA n¬∫ 428/2010; Instru√ß√£o Normativa ICMBio n¬∫ 07/2014; Instru√ß√£o Normativa ICMBio n¬∫ 04/2009 e Parecer n¬∫ 0496/2011-PFE-ICMBio-SEDE/PGF/AGU. \n"
+print "Vers√£o 0.1"
 print "Autor: Arlindo Gomes Filho"
 print "Contato: argofix@gmail.com"
 
